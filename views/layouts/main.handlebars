@@ -10,13 +10,13 @@
   <body>
     <div class='wrapper'>
       <header>
-        <h1 class='animate__animated animate__pulse'>
-          <a href='/' class='title'>Tech Blog</a>
+        <h1>
+          <a href='/'>Tech Blog</a>
         </h1>
-        <nav class='header-nav'>
+        <nav>
           <span><a href='/'>home</a></span>
           {{#if loggedIn}}
-            <a href='/dashboard' class='dashboard-btn'>dashboard</a>
+            <a href='/dashboard'>dashboard</a>
             <button id='logout' class='btn-no-style'>logout</button>
           {{else}}
             <a href='/login'>login</a>
@@ -30,7 +30,6 @@
         Thanks for visiting!
       </footer>
     </div>
-
     {{#if loggedIn}}
       <script src='/javascript/logout.js'></script>
     {{/if}}
