@@ -79,14 +79,25 @@ a:hover {
 .post-list {
   margin: 0;
   padding: 0;
-  background-color: #edf6f9;
 }
 
 .title {
   background-color: #ffddd2;
   font-family: 'Changa', sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
   padding: 10px;
+}
+
+.post .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #e29578;
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height: 150%;
+  background-color: #edf6f9;
 }
 
 /* form styles for login page */
@@ -94,7 +105,7 @@ textarea,
 input {
   padding: 0.5%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #83c5be;
 }
 
 textarea:focus,
@@ -120,34 +131,35 @@ form label {
 /* login button styles */
 button {
   background-color: #006d77;
-  border: 0;
-  padding: 1%;
+  border: solid 1.5px #e29578;
+  padding: 0.75%;
   color: white;
   font-weight: bold;
   transition: background-color 0.1s;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
+  width: 10%;
 }
 
 button:hover {
   background-color: #83c5be;
+  color: #403d39;
 }
 
 /* dashbaord */
-.post {
-  margin-bottom: 2%;
-  line-height: 150%;
-}
-
-.post .title span {
-  font-style: italic;
-  font-size: 90%;
-  color: #e29578;
-}
-
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
+  background-color: #e29578;
+  width: 9%;
+  border: solid 1px #ffddd2;
+  border-radius: 8%;
+  text-align: center;
+}
+
+.edit-link:hover {
+  background-color: #ffddd2;
+  border: solid 1px #e29578;
 }
 
 .edit-post-form {
@@ -160,11 +172,12 @@ button:hover {
 
 /* delete button */
 .delete-post-btn {
-  background-color: #d41414;
+  background-color: #e29578;
 }
 
 .delete-post-btn:hover {
-  background-color: #ff643d;
+  background-color: #ffddd2;
+  color: #403d39;
 }
 
 /* single post */
@@ -178,13 +191,14 @@ button:hover {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: #83c5c072;
+  width: 100%;
 }
 
 .comment .meta {
   font-size: 90%;
   margin-bottom: 0.5%;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 /* bottom of page */
