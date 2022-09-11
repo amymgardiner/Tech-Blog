@@ -50,7 +50,6 @@ router.get('/:id', (req, res) => {
 
 // create a user by requiring them to create a username, provide their email, and make a password
 router.post('/', (req, res) => {
-  // expects {username: 'BobsBurgers', email: 'bobsburgers@gmail.com', password: 'password1234'}
   User.create({
     username: req.body.username,
     email: req.body.email,
@@ -73,14 +72,13 @@ router.post('/', (req, res) => {
 
 // allow a user to login by their email and password, by finding that created user
 router.post('/login', (req, res) => {
-  // expects {email: 'bobsburgers@gmail.com', password: 'password1234'}
   User.findOne({
     where: {
-      email: req.body.email,
+      username: req.body.username,
     },
   }).then((dbUserData) => {
     if (!dbUserData) {
-      res.status(400).json({ message: 'No user with that email address!' });
+      res.status(400).json({ message: 'No user with that username!' });
       return;
     }
 
@@ -110,30 +108,6 @@ router.post('/logout', (req, res) => {
   } else {
     res.status(404).end();
   }
-});
-
-// update user by id
-router.put('/:id', (req, res) => {
-  // expects {username: 'BobsBurgers', email: 'bobsburgers@gmail.com', password: 'password1234'}
-
-  // pass in req.body instead to only update what's passed through
-  User.update(req.body, {
-    individualHooks: true,
-    where: {
-      id: req.params.id,
-    },
-  })
-    .then((dbUserData) => {
-      if (!dbUserData) {
-        res.status(404).json({ message: 'No user found with this id' });
-        return;
-      }
-      res.json(dbUserData);
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json(err);
-    });
 });
 
 // delete a user by id
