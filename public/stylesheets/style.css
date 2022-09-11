@@ -63,6 +63,7 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
   color: #006d77;
+  font-family: 'Electrolize', sans-serif;
   font-size: 100%;
   font-weight: bold;
   transition: color 0.1s;
@@ -78,6 +79,14 @@ a:hover {
 .post-list {
   margin: 0;
   padding: 0;
+  background-color: #edf6f9;
+}
+
+.title {
+  background-color: #ffddd2;
+  font-family: 'Changa', sans-serif;
+  font-size: 1em;
+  padding: 10px;
 }
 
 /* form styles for login page */
@@ -133,7 +142,7 @@ button:hover {
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
+  color: #e29578;
 }
 
 .edit-link {
