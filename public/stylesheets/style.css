@@ -9,8 +9,8 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
-  color: #333;
+  font-family: 'Abel', sans-serif;
+  color: #403d39;
 }
 
 main {
@@ -29,7 +29,9 @@ main {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
+  background-color: #edf6f9;
+  font-family: 'Electrolize', sans-serif;
+  border-bottom: 1px solid #83c5be;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,18 +40,19 @@ header {
 
 header h1 {
   font-size: 1em;
+  font-family: 'Press Start 2P', cursive;
 }
 
 /* links */
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #006d77;
   font-weight: bold;
   transition: color 0.1s;
 }
 
 a:hover {
-  color: #3486eb;
+  color: #83c5be;
 }
 
 /* nav dashboard button */
@@ -59,7 +62,7 @@ a:hover {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #006d77;
   font-size: 100%;
   font-weight: bold;
   transition: color 0.1s;
@@ -68,7 +71,7 @@ a:hover {
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: #83c5be;
 }
 
 /* home page */
@@ -88,7 +91,7 @@ input {
 textarea:focus,
 input:focus {
   outline: none;
-  border: 1px solid #3486eb;
+  border: 1px solid #e29578;
 }
 
 textarea {
@@ -102,11 +105,12 @@ form > div {
 
 form label {
   display: block;
+  font-family: 'Special Elite', cursive;
 }
 
 /* login button styles */
 button {
-  background-color: #225ca3;
+  background-color: #006d77;
   border: 0;
   padding: 1%;
   color: white;
@@ -117,7 +121,7 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #83c5be;
 }
 
 /* dashbaord */
@@ -176,7 +180,9 @@ button:hover {
 
 /* bottom of page */
 footer {
-  border-top: 1px solid #ccc;
+  background-color: #edf6f9;
+  font-family: 'Electrolize', sans-serif;
+  border-top: 1px solid #83c5be;
   display: flex;
   justify-content: center;
   padding: 1%;

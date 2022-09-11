@@ -5,6 +5,12 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Tech Blog</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Abel&family=Changa&family=Electrolize&family=Press+Start+2P&family=Special+Elite&display=swap'
+      rel='stylesheet'
+    />
   </head>
 
   <body>
@@ -15,6 +21,7 @@
         </h1>
         <nav>
           <span><a href='/'>home</a></span>
+          &nbsp;&nbsp;&nbsp;
           {{#if loggedIn}}
             <a href='/dashboard'>dashboard</a>
             <button id='logout' class='btn-no-style'>logout</button>
