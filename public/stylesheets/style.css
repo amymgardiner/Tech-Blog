@@ -1,7 +1,9 @@
+/* root */
 * {
   box-sizing: border-box;
 }
 
+/* body */
 body,
 html {
   height: 100%;
@@ -11,6 +13,34 @@ html {
   color: #333;
 }
 
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+/* header */
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+}
+
+header h1 {
+  font-size: 1em;
+}
+
+/* links */
 a {
   text-decoration: none;
   color: #225ca3;
@@ -22,26 +52,32 @@ a:hover {
   color: #3486eb;
 }
 
-button {
-  background-color: #225ca3;
-  border: 0;
-  padding: 1%;
-  color: white;
-  font-weight: bold;
-  transition: background-color 0.1s;
+/* nav dashboard button */
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
-  border-radius: 5px;
+  text-decoration: none;
+  color: #225ca3;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color 0.1s;
+  margin-left: 16px;
 }
 
-button:hover {
-  background-color: #3486eb;
+.btn-no-style:hover {
+  background: none;
+  color: #3486eb;
 }
 
+/* home page */
 .post-list {
   margin: 0;
   padding: 0;
 }
 
+/* form styles for login page */
 textarea,
 input {
   padding: 0.5%;
@@ -68,58 +104,23 @@ form label {
   display: block;
 }
 
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1%;
-}
-
-header h1 {
-  font-size: 1em;
-}
-
-main {
-  flex: 1;
-  padding: 2% 4%;
-}
-
-.btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  color: #225ca3;
-  font-size: 100%;
+/* login button styles */
+button {
+  background-color: #225ca3;
+  border: 0;
+  padding: 1%;
+  color: white;
   font-weight: bold;
-  transition: color 0.1s;
-  margin-left: 16px;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.btn-no-style:hover {
-  background: none;
-  color: #3486eb;
+button:hover {
+  background-color: #3486eb;
 }
 
-.delete-post-btn {
-  background-color: #d41414;
-}
-
-.delete-post-btn:hover {
-  background-color: #ff643d;
-}
-
+/* dashbaord */
 .post {
   margin-bottom: 2%;
   line-height: 150%;
@@ -136,15 +137,24 @@ main {
   margin: -1.5% 0 2% 0;
 }
 
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color 0.1s;
+.edit-post-form {
+  margin-bottom: 5%;
 }
 
-.upvote-btn:hover {
-  background-color: #1f9c13;
+.new-post-form input {
+  width: 300px;
 }
 
+/* delete button */
+.delete-post-btn {
+  background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+
+/* single post */
 .comment-form {
   margin-bottom: 5%;
 }
@@ -164,14 +174,7 @@ main {
   opacity: 0.6;
 }
 
-.new-post-form input {
-  width: 300px;
-}
-
-.edit-post-form {
-  margin-bottom: 5%;
-}
-
+/* bottom of page */
 footer {
   border-top: 1px solid #ccc;
   display: flex;
