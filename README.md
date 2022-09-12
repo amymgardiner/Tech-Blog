@@ -24,4 +24,6 @@ WHEN you click on the logout option in the navigation, THEN you are signed out o
 
 [Tech Blog Heroku App](https://nameless-wave-53843.herokuapp.com/)
 
-![nameless-wave-53843 herokuapp com_](https://user-images.githubusercontent.com/99151426/189514114-2d927b3f-f800-4b3e-8649-f788fc7bc512.png)
+![nameless-wave-53843 herokuapp com_ (1)](https://user-images.githubusercontent.com/99151426/189772200-3bf988b9-0bc1-49d6-b85d-d193667aeb8c.png)
+
+
