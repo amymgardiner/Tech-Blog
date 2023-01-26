@@ -22,8 +22,8 @@ WHEN you click on the logout option in the navigation, THEN you are signed out o
 
 ## Link
 
-[Tech Blog Heroku App](https://nameless-wave-53843.herokuapp.com/)
+[Tech Blog Render App](https://tech-blog-bz1d.onrender.com/)
 
 ![nameless-wave-53843 herokuapp com_ (1)](https://user-images.githubusercontent.com/99151426/189772200-3bf988b9-0bc1-49d6-b85d-d193667aeb8c.png)
 
-
+**Update: Due to the removal of Heroku's free product plans, I have found another free hosting platform that was not taught in the bootcamp. The [Heroku link](https://nameless-wave-53843.herokuapp.com/) for this site no longer works. Please view this site with the new link above. Thanks!**
