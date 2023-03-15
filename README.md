@@ -6,6 +6,8 @@ This was my module 14 challenge for my coding bootcamp.
 
 It is a CMS-style blog site, where developers can publish their blog posts and comment on other developers’ posts as well. I built this site completely from scratch and deployed it to Heroku. The app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
+**Update: Due to the removal of Heroku's free product plans, I have found another free hosting platform that was not taught in the bootcamp. The [Heroku link](https://nameless-wave-53843.herokuapp.com/) for this site no longer works. Please view this site with the new link below. Thanks!**
+
 ## How It Works
 
 GIVEN a CMS-style blog site, WHEN you visit the site for the first time, THEN you are presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the option to log in.
@@ -22,8 +24,8 @@ WHEN you click on the logout option in the navigation, THEN you are signed out o
 
 ## Link
 
+`Note: I use Render now for hosting my school projects, on their free plan. A free plan will spin down after 15 minutes of inactivity, and the next request will spin it back up, which can take awhile. So please be patient as the site may take some time to initially load due to Render restrictions.`
+
 [Tech Blog Render App](https://tech-blog-bz1d.onrender.com/)
 
 ![nameless-wave-53843 herokuapp com_ (1)](https://user-images.githubusercontent.com/99151426/189772200-3bf988b9-0bc1-49d6-b85d-d193667aeb8c.png)
-
-**Update: Due to the removal of Heroku's free product plans, I have found another free hosting platform that was not taught in the bootcamp. The [Heroku link](https://nameless-wave-53843.herokuapp.com/) for this site no longer works. Please view this site with the new link above. Thanks!**
